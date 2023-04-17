@@ -1,0 +1,42 @@
+#articles {
+    position: relative;
+    top: 6vw;
+}
+
+.article {
+    width: 80vw;
+    height: 20vw;
+    margin: 3vw 0vw;
+    display: flex;
+    
+    background-color: #080808;
+}
+
+.container {
+    width: 20vw;
+    height: 20vw;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.newsImg {
+    height: 20vw;
+    width: 20vw;
+    object-fit: cover;
+    transition: all 0.3s;
+}
+
+.newsImg:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.text {
+    padding: 2rem; 
+    max-width: 60vw;
+}
+
+.link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

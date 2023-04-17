@@ -1,0 +1,181 @@
+main {
+    top: 8vw
+}
+
+.title {
+    text-align: center;
+}
+
+.front{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 4rem;
+    font-family: 'Trebuchet MS', 'Gill Sans MT', Calibri, sans-serif;
+
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes slide {
+    from { transform: translateY(-2rem); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.bg{
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 3.2rem;
+    font-family: 'Trebuchet MS', 'Gill Sans MT', Calibri, sans-serif;
+
+    color: #202020;
+    text-shadow:
+        -1px -1px 0 #0bb7dc,  
+        1px -1px 0 #0bb7dc,
+        -1px 1px 0 #0bb7dc,
+        1px 1px 0 #0bb7dc;
+
+    margin-top: -4.6rem;
+    z-index: 1;
+
+    animation-name: slide;
+    animation-duration: 1s;
+}
+
+#top {
+    margin-top: -0.6rem;
+}
+
+#game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+
+    margin-top: -5rem;
+
+    z-index: 3;
+}
+
+#info {
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    animation-name: slide;
+    animation-duration: 3s;
+}
+
+#info > *{
+    margin-top: -1.2rem;
+}
+
+#emblems {
+    margin-top: 2rem;
+
+    animation-name: slide;
+    animation-duration: 2s;
+}
+
+.teams {
+    width: 14vw;
+}
+
+.league {
+    width: 7vw;
+    margin-bottom: 3vw;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.icons {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.4rem;
+}
+
+#news {
+    height: 45vw;
+    width: 80vw;
+    
+    max-height: 50vw;
+    max-width: 80vw;
+    overflow: hidden;
+    margin-top: 8vw;
+}
+
+#newsImg {
+    min-width: 80vw;
+    min-height: 45vw;
+    max-width: 80vw;
+    overflow: hidden;
+
+    transition: all 0.4s;
+}
+
+#newsImg:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#container {
+    max-width: 80vw;
+    max-height: 45vw;
+    overflow: hidden; 
+}
+
+#buttons {
+    position: relative;
+    width: 20vw;
+    top: -44vw;
+    left: 30vw;
+
+    display: flex;
+    justify-content: center;
+}
+
+#buttons button {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 10rem;
+    border: none;
+    cursor: pointer;
+    margin: 7px;
+    
+    filter: drop-shadow(5px 4px 2px #000);
+}
+
+#buttons button:disabled {
+    opacity: 0.65;
+}
+
+#title {
+    position: relative;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 70%, rgba(0,0,0,0) 100%);
+    color: white;
+    padding: 2vw;
+    height: 10vw;
+    bottom: 17vw;
+    overflow: hidden;
+}
+
+#title h1{
+    margin-left: 2rem;
+    filter: drop-shadow(5px 4px 2px #000);
+}
+
+#title p{
+    margin-left: 2rem;
+}
+
+#title h1:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}

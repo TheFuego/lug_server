@@ -1,0 +1,30 @@
+#img {
+    width: 80vw;
+}
+
+#container {
+    height: 30vw;
+    overflow: hidden;
+}
+
+
+#date {
+    margin-top: -1.2rem;   
+    margin-bottom: 1rem;  
+    margin-left: 1rem; 
+    color: #4d4d4d;
+}
+
+#article {
+    position: relative;
+    width: 80vw;
+    min-height: 140vh;
+    
+    background-color: #080808;
+
+    top: 8vw;
+}
+
+#article--text {
+    padding: 1.6rem 3rem;
+}

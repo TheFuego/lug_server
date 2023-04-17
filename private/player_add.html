@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodaj igrača</title>
+</head>
+<body>
+    <h1>Dodaj igrača</h1>
+
+    <main>
+        <input type="text" id="name" placeholder="Ime"> 
+        <input type="text" id="surname" placeholder="Prezime">
+        <input type="number" id="number" min="0" max="99" placeholder="Broj"><br>
+
+        <label for="date">Datum rodjenja:</label><br>
+        <input type="date" id="date">
+
+        <select id="position">
+            <option value="gk">Golman</option>
+            <option value="def">Odbrambeni</option>
+            <option value="mid">Vezni</option>
+            <option value="for">Napadač</option>
+        </select><br><br>
+
+        <form id="imgForm" enctype="multipart/form-data">
+            <label for="img">Slika:</label><br>
+            <input type="file" id="img" name="photo" accept="image/*">
+        </form><br>
+    </main>
+
+    <button id="submit">Pošalji</button>
+
+    <br><hr>
+    
+    <div id="players">
+        
+    </div>
+    
+    <script src="/playerAdd.js"></script>
+</body>
+</html>

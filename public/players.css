@@ -1,0 +1,70 @@
+#players {
+    position: relative;
+    top: 8vw;
+}
+
+.position {
+    text-align: left;
+    width: 80vw;
+    background-color: #080808;
+    padding: 2px;
+}
+
+.position h1 {
+    margin-left: 2rem;
+}
+
+hr {
+    border: 1px solid #0bb7dc;
+}
+
+.image img {
+    height: 16rem;
+    width: 12rem;
+    object-fit: cover;
+}
+
+.name {
+    display: flex;
+    align-items: flex-start;
+}
+
+.fullname {
+    font-size: 1.2rem;
+    margin: 0.8rem 0 0 0;
+}
+
+.number {
+    font-size: 2.4rem;
+    font-family: Molot;
+
+    margin: 0.5rem 0.5rem 0 0;
+}
+
+.player {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+    background-color: #202020;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    margin-top: -0.4rem;
+
+    max-width: 16rem;
+}
+
+.position--players {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
