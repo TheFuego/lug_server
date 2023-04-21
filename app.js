@@ -55,7 +55,7 @@ app.use(express.static('assets')) // CSS
 app.use(express.static('script')) // JavaScript
 app.use(express.json())
 
-const password = "dragan"
+const password = "lug12345"
 let passwordGuess 
 
 let picName = "default"
@@ -166,7 +166,7 @@ app.get("/admin", (req, res) => {
   res.sendFile(__dirname + "/private/admin.html");
 });
 
-app.get("/private/article", (req, res) => {
+app.get("/article", (req, res) => {
   if(passwordGuess == password) {
     res.sendFile(__dirname + "/private/article.html");
   }else {
@@ -174,7 +174,7 @@ app.get("/private/article", (req, res) => {
   }
 });
 
-app.get("/private/match", (req, res) => {
+app.get("/match", (req, res) => {
   if(passwordGuess == password) {
     res.sendFile(__dirname + "/private/match.html");
   }else {
@@ -182,7 +182,7 @@ app.get("/private/match", (req, res) => {
   }
 });
 
-app.get("/private/player_add", (req, res) => {
+app.get("/player_add", (req, res) => {
   if(passwordGuess == password) {
     res.sendFile(__dirname + "/private/player_add.html");
   }else {
